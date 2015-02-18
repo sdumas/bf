@@ -166,7 +166,7 @@ blockquote strong {
 	width:100%;
     box-sizing:border-box;
 	border-bottom: 1px solid #eee;
-/*	box-shadow:0px 0px 20px rgba(0, 0, 0, 0.1);*/
+	box-shadow:0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -1130,6 +1130,9 @@ footer a.totop:hover {
     }
     
 }
+/* ===========================
+--- Custom CSS
+============================ */
 html, body{
 	height: 100%;
 }
@@ -1138,15 +1141,16 @@ html, body{
 	position: relative;
 	z-index: 9999;
 	background-color: transparent;
-/*	background-image: url(../img/istock.gif);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: top left;*/
 }
 .videoBG_wrapper, .videoBG{
-	height: 100% !important;
 	width: 100% !important;
+	height: 100% !important;
 }
+/*.videoBG{
+	video{
+		min-height: auto !important;
+	}
+}*/
 #navigation-sticky-wrapper{
 	position: relative;
 	z-index: 99999;
@@ -1159,7 +1163,8 @@ html, body{
 		min-width: 175px;
 	}
 }
-#about{
+.section_under_video{
+	padding-top: 150px;
 	position: relative;
 	&:before {
 	    background-color: #b2b2b2;
@@ -1174,6 +1179,70 @@ html, body{
 	    z-index: -1;
 	}    
 }
-.headlin-area{
-	padding-top: 150px;
+.ww-offer{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.single-feature{
+	padding: 20px;
+	margin-top: 20px;
+	display: block;
+	background-color: white;
+	&:hover{
+		background-color: white;
+	}		
+	> a{
+		color: #333;
+		text-decoration: none;
+		text-align: center;
+		i{
+			font-size: 120px;
+		}
+		.feature-title{
+			margin-top: 15px;
+			color: black;
+			h5{
+				font-weight: bold;
+			}
+		}		
+	}
+	&:before{
+		background-color: white;
+		transition-duration: 0.3s; 
+	}
+	&:hover, &:focus, &:active{
+		transform: translateY(-15px);
+		&:before{
+			transform: translateY(15px);
+		}
+	}
+}
+.center-headline{
+	h1,h2{
+		text-align: center;
+	}
+}
+.specialization{
+	padding-bottom: 40px;
+}
+.specialization-content{
+    margin-top: 30px;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;	
+}
+.specialization-cta{
+	margin-top: 40px;
+}
+@media(max-width: 1199px){
+}
+
+@media(max-width: 767px){
+/*	html, body{
+		height: auto;
+	}*/
+	.specialization-content{
+	    padding-left: 5%;
+	    padding-right: 5%;
+	}	
 }

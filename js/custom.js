@@ -4,10 +4,11 @@ $(document).ready(function() {
 	$('.hero').videoBG({
 		mp4:'video/istock.mp4',
 		webm:'video/istock.webm',
+		ogv:'video/istock.ogv',		
 		scale:true,
 		zIndex:0
 	});
-	
+
 });
 /*global jQuery:false */
 (function ($) {
